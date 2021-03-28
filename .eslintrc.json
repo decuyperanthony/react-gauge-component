@@ -1,0 +1,69 @@
+{
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  },
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "no-unsafe-optional-chaining": [
+      "warn"
+    ],
+    "camelcase": [
+      "off"
+    ],
+    "react/jsx-props-no-spreading": [
+      "off"
+    ],
+    "jsx-a11y/href-no-hash": [
+      "off"
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "import/no-named-as-default": 0,
+    "no-unused-vars": [
+      "warn"
+    ],
+    "import/no-cycle": [
+      "off"
+    ],
+    "no-ternary": ["off"],
+    "max-len": [
+      "warn",
+      {
+        "tabWidth": 2,
+        "ignoreComments": false,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ]
+  }
+}
