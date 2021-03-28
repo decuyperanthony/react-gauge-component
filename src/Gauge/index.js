@@ -74,11 +74,11 @@ const Gauge = ({ value, min, max, label, colorStartScale, colorEndScale }) => {
           marginTop: "0.4em",
           fontSize: "3em",
           lineHeight: "1em",
-          fontWeight: "900",
+          fontWeight: "700",
           fontFeatureSettings: "'zero', 'tnum' 1",
         }}
       >
-        {value}
+        {value}%
       </div>
       {!!label && (
         <div

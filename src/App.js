@@ -1,18 +1,23 @@
 import React from "react";
 
 import Gauge from "./Gauge";
+import Slider from "./Slider";
 
 const App = () => {
+  const purple = "#4834d4";
+  const [value, setValue] = React.useState(50);
   return (
     <div className="App">
       <Gauge
-        value={50}
+        value={value}
+        // value={50}
         min={0}
         max={100}
         label="Gauge"
         colorStartScale="#dbdbe7"
-        colorEndScale="#4834d4"
+        colorEndScale={purple}
       />
+      <Slider value={value} min={0} max={100} setValue={setValue} />
     </div>
   );
 };

@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://anthonydecuyper.netlify.app/">
+    <a href="https://anthony-de-cuyper-react-gauge.netlify.app/">
       Demo
     </a>
   </h3>
@@ -71,7 +71,7 @@ export default App;
 |value         | `number`    |     | `100`  | max of the Gauge
 |label         | `string`    |     | `Gauge`  | label under the Gauge
 |colorStartScale         | `string`    |     | `#dbdbe7`  | start linear gradient color
-|label         | `string`    |     | `#4834d4`  | end linear gradient
+|colorEndScale         | `string`    |     | `#4834d4`  | end linear gradient
 
 
 
