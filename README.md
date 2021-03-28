@@ -20,7 +20,11 @@
 
 ## Overview
 
-![screenshot](./.github/img/react-gauge.png)
+<div align="center">
+  <h3>
+    <img width="50%" height="auto" src="./.github/img/react-gauge.png" >
+  </h3>
+</div>
 
 ### Built With
 
@@ -41,6 +45,17 @@ $ yarn
 
 # Run the app
 $ yarn start
+```
+
+or
+
+```bash
+# Copy folder
+$ cp src/Gauge
+
+# Install dependencies
+$ yarn add d3-shape d3-scale d3-format
+
 ```
 
 ## Usage
