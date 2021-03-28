@@ -2,6 +2,8 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
+import "./styles.css";
+
 import {
   backgroundArc,
   angleScale,
@@ -22,12 +24,7 @@ const Gauge = ({ value, min, max, label, colorStartScale, colorEndScale }) => {
   const gradientSteps = colorScale.ticks(10).map((val) => colorScale(val));
   const markerLocation = getCoordsOnArc(angle, 1 - (1 - 0.65) / 2);
   return (
-    <div
-      style={{
-        textAlign: "center",
-        padding: "2em",
-      }}
-    >
+    <div className="wrapper">
       <svg
         style={{ overflow: "visible" }}
         width="9em"
@@ -69,25 +66,12 @@ const Gauge = ({ value, min, max, label, colorStartScale, colorEndScale }) => {
           fill="#6a6a85"
         />
       </svg>
-      <div
-        style={{
-          marginTop: "0.4em",
-          fontSize: "3em",
-          lineHeight: "1em",
-          fontWeight: "700",
-          fontFeatureSettings: "'zero', 'tnum' 1",
-        }}
-      >
-        {value}%
-      </div>
+      <div className="percentValue">{value}%</div>
       {!!label && (
         <div
+          className="label"
           style={{
             color: "#8b8ba7",
-            marginTop: "0.6em",
-            fontSize: "1.3em",
-            lineHeight: "1.3em",
-            fontWeight: "700",
           }}
         >
           {label}

@@ -4,6 +4,7 @@ import Gauge from "./Gauge";
 import Slider from "./Slider";
 
 const App = () => {
+  const white = "#dbdbe7";
   const purple = "#4834d4";
   const [value, setValue] = React.useState(50);
   return (
@@ -14,7 +15,7 @@ const App = () => {
         min={0}
         max={100}
         label="Gauge"
-        colorStartScale="#dbdbe7"
+        colorStartScale={white}
         colorEndScale={purple}
       />
       <Slider value={value} min={0} max={100} setValue={setValue} />
